@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.example</groupId>
+    <artifactId>springsutdy</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies> <!-- <dependencies>와 </dependencies> 태그 사이에 프로젝트를 위한 의존성을 추가한다 -->
+        <dependency> <!-- 의존성은 <dependency>와 </dependency> 태그 사이에 포함하여 표현한다. -->
+            <groupId>org.springframework</groupId> <!-- 라이브러리의 그룹 ID (Spring 프레임워크) -->
+            <artifactId>spring-context</artifactId> <!-- 라이브러리의 아티팩트 ID (spring-jdbc 모듈) -->
+            <version>6.1.6</version> <!-- 라이브러리의 버전 (6.1.6) -->
+        </dependency>
+    </dependencies>
+
+</project>
