@@ -1,4 +1,4 @@
-package org.exmplae.spring;
+package org.exmplae.spring.ch1;
 
 import org.exmplae.spring.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

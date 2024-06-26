@@ -1,7 +1,7 @@
 package org.exmplae.spring.config;
 
-import org.exmplae.spring.Parrot;
-import org.exmplae.spring.Person;
+import org.exmplae.spring.ch1.Parrot;
+import org.exmplae.spring.ch1.Person;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
