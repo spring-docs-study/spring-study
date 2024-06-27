@@ -1,16 +1,15 @@
-package org.exmplae.spring.ch4;
+package org.exmplae.spring.ch5;
 
+import org.exmplae.spring.ch4.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-
-@Component
-public class CommentService {
+@Service
+public class UserService {
 	@Autowired
 	private CommentRepository commentRepository;
 
-	public CommentService (CommentRepository commentRepository) {
+	public UserService (CommentRepository commentRepository) {
 		this.commentRepository = commentRepository;
 	}
 

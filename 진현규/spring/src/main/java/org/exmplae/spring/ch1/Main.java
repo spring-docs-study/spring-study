@@ -1,11 +1,11 @@
 package org.exmplae.spring.ch1;
 
-import org.exmplae.spring.config.ProjectConfig;
+import org.exmplae.spring.ch6.ProjectConfig6;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
 	public static void main (String[] args) throws Exception {
-			var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
+			var context = new AnnotationConfigApplicationContext(ProjectConfig6.class);
 			Parrot p = context.getBean(Parrot.class);
 			System.out.println(p.getName());
 

@@ -11,6 +11,5 @@ public class Main {
 		comment.setText("new comment");
 
 		CommentService bean = context.getBean(CommentService.class);
-		bean.publishComment(comment);
 	}
 }
