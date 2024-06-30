@@ -1,8 +1,16 @@
-package org.exmplae.spring.ch4;
+package org.exmplae.spring.chpater;
 
 public class Comment {
 	private String text;
 	private String author;
+
+	public Comment () {
+	}
+
+	public Comment (String text, String author) {
+		this.text = text;
+		this.author = author;
+	}
 
 	public String getText () {
 		return text;
