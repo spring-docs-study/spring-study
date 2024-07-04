@@ -18,6 +18,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/spring/pom.xml" />
+        <option value="$PROJECT_DIR$/springex/pom.xml" />
       </list>
     </option>
   </component>
