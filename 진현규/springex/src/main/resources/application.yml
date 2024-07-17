@@ -1,2 +1,7 @@
 server:
   port: 10000
+
+
+name:
+  service:
+    url: http://localhost:10000

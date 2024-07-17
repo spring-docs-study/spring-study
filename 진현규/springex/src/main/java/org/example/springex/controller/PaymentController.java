@@ -1,34 +1,30 @@
 package org.example.springex.controller;
 
+import java.util.UUID;
 import java.util.logging.Logger;
 
-import org.example.springex.Errors.ErrorDetails;
-import org.example.springex.service.PaymentDetails;
-import org.example.springex.service.PaymentService;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.example.springex.domain.Payment;
+import org.example.springex.proxy.PaymentProxy;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import reactor.core.publisher.Mono;
 
 @RestController
 public class PaymentController {
 	private Logger log = Logger.getLogger(PaymentController.class.getName());
 
-	private final PaymentService paymentService;
+	private final PaymentProxy paymentProxy;
 
-	public PaymentController (PaymentService paymentService) {
-		this.paymentService = paymentService;
+	public PaymentController (PaymentProxy proxy) {
+		this.paymentProxy = proxy;
 	}
+
 
 	@PostMapping("/payment")
-	public ResponseEntity<PaymentDetails> makePayment(@RequestBody PaymentDetails paymentDetails) {
-		log.info("Received payment : " +  paymentDetails.getAmount());
-
-		return ResponseEntity
-			.status(HttpStatus.ACCEPTED)
-			.body(paymentDetails);
-
+	public Mono<Payment> createPayment(@RequestBody Payment payment) {
+		String requestId = UUID.randomUUID().toString();
+		return paymentProxy.createPayment(requestId,payment);
 	}
-
 }
