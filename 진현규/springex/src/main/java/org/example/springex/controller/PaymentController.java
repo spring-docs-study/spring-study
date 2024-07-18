@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import reactor.core.publisher.Mono;
 
 @RestController
 public class PaymentController {
@@ -22,9 +21,9 @@ public class PaymentController {
 	}
 
 
-	@PostMapping("/payment")
+/*	@PostMapping("/payment")
 	public Mono<Payment> createPayment(@RequestBody Payment payment) {
 		String requestId = UUID.randomUUID().toString();
 		return paymentProxy.createPayment(requestId,payment);
-	}
+	}*/
 }

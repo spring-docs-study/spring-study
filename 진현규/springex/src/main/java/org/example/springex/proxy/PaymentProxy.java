@@ -15,14 +15,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.reactive.function.client.WebClient;
-
-import reactor.core.publisher.Mono;
 
 @Component
 public class PaymentProxy {
 
-	public PaymentProxy (WebClient webClient) {
+/*	public PaymentProxy (WebClient webClient) {
 		this.webClient = webClient;
 	}
 
@@ -38,7 +35,7 @@ public class PaymentProxy {
 			.body(Mono.just(payment), Payment.class)
 			.retrieve()
 			.bodyToMono(Payment.class);
-	}
+	}*/
 
 
 }
