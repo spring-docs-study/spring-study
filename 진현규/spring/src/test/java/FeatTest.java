@@ -1,12 +1,9 @@
-import org.exmplae.spring.ch4.Comment;
-import org.exmplae.spring.ch4.CommentService;
-import org.exmplae.spring.ch4.DBCommentRepository;
-import org.exmplae.spring.ch4.EmailCommentNotificationProxy;
+import org.exmplae.spring.chpater.CommentService;
 
 public class FeatTest {
 
 	public static void main (String[] args) {
-		var commentRepository = new DBCommentRepository();
+/*		var commentRepository = new DBCommentRepository();
 		var emailCommentNotificationProxy = new EmailCommentNotificationProxy();
 
 		CommentService commentService = new CommentService(commentRepository, emailCommentNotificationProxy);
@@ -15,6 +12,6 @@ public class FeatTest {
 		comment.setAuthor("JIN HYEON KYU");
 		comment.setText("나는 천재야");
 
-		commentService.publishComment(comment);
+		commentService.publishComment(comment);*/
 	}
 }
